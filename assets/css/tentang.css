@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #116530;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0rem;
+    color: #fff;
+}
+
+nav .logo {
+    font-size: 1.rem;
+    width: 30%;
+}
+
+nav .logo img {
+    padding-top: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li a {
+    color: inherit;
+    margin-left: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container {
+    width : 960px;
+    margin : 50px auto;
+    margin-top: 20px;
+}
+
+.container .desa img {
+    width: 860px;
+    background-size: cover;
+    margin-left: 50px;  
+}
+
+.header {
+    margin-top: 100px;
+    margin-left:  50px;
+}
+
+.header p {
+    text-align: justify;
+    width: 860px;
+    margin-bottom: 35px;
+}
+
+
+.sejarah{
+    margin-top: 35px;
+    margin-left:  50px;
+    width: 860px;
+}
+
+.sejarah .visi {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.sejarah .misi {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sejarah p {
+    text-align: justify;
+}
+
+.tokoh h2{
+    margin-top: 100px;
+    margin-left: 50px;
+
+}
+
+hr {
+    width: 30px;
+    border-top: 3px solid #116530;
+    margin-left: 50px;
+}
+
+.container .cards {
+    width: 860px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.card {
+    margin-right: 25px;
+    background-color: #116530;
+    width: 33.3%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+    transition: cubic-bezier(0.175, 0.885, 0, 1);
+}
+
+.card-img {
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-img-hover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
+    transition: 0.2s all ease-out;
+}
+
+.card:hover .card-img-hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1, 1.1);
+}
+
+.card-info {
+    z-index: 2;
+    background-color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
+}
+
+.card-category {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-style: 500;
+    color: #868686;
+}
+
+.card-title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.card-by {
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+.card-admin {
+    font-weight: 600;
+    text-decoration: none;
+    color: #ad7d52;
+}
+
+.card:hover .card-info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card-info-hover {
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+}
+
+.card:hover .card-info-hover {
+    opacity: 1;
+}
